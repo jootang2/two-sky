@@ -67,7 +67,7 @@ export default function WhySection() {
           {FEATURES.map((feature) => (
             <div
               key={feature.id}
-              className="group relative rounded-2xl overflow-hidden aspect-[4/3] cursor-default"
+              className="group relative rounded-2xl overflow-hidden h-52 sm:h-auto sm:aspect-[4/3] cursor-default"
             >
               {/* 이미지 or 플레이스홀더 */}
               {feature.imageSrc ? (
