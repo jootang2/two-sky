@@ -39,7 +39,6 @@ const navItems: NavItem[] = [
       { label: "고1", href: "/high/1" },
       { label: "고2", href: "/high/2" },
       { label: "고3", href: "/high/3" },
-      { label: "N수", href: "/high/n" },
       { label: "시스템 / 클리닉", href: "/high/system" },
     ],
   },
@@ -48,13 +47,12 @@ const navItems: NavItem[] = [
     href: "/teachers",
     children: [
       { label: "강사소개", href: "/teachers/staff" },
-      { label: "직원소개", href: "/teachers/crew" },
     ],
   },
-  { label: "진단평가", href: "/diagnosis" },
-  { label: "공지사항", href: "/notice" },
-  { label: "Q&A", href: "/qna" },
-  { label: "게시판", href: "/board" },
+  // { label: "진단평가", href: "/diagnosis" },
+  // { label: "공지사항", href: "/notice" },
+  // { label: "Q&A", href: "/qna" },
+  // { label: "게시판", href: "/board" },
 ];
 
 function DesktopNavItem({ item, isActive }: { item: NavItem; isActive: boolean }) {
@@ -72,14 +70,24 @@ function DesktopNavItem({ item, isActive }: { item: NavItem; isActive: boolean }
 
   return (
     <div className="relative h-14 flex items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <Link
-        href={item.href}
-        className={`px-4 h-14 flex items-center text-sm font-medium transition-colors whitespace-nowrap ${
-          isActive ? "bg-orange-500 text-white" : "text-gray-200 hover:text-white hover:bg-white/10"
-        }`}
-      >
-        {item.label}
-      </Link>
+      {item.children ? (
+        <button
+          className={`px-4 h-14 flex items-center text-sm font-medium transition-colors whitespace-nowrap ${
+            isActive ? "bg-orange-500 text-white" : "text-gray-200 hover:text-white hover:bg-white/10"
+          }`}
+        >
+          {item.label}
+        </button>
+      ) : (
+        <Link
+          href={item.href}
+          className={`px-4 h-14 flex items-center text-sm font-medium transition-colors whitespace-nowrap ${
+            isActive ? "bg-orange-500 text-white" : "text-gray-200 hover:text-white hover:bg-white/10"
+          }`}
+        >
+          {item.label}
+        </Link>
+      )}
 
       {/* 드롭다운 */}
       {item.children && open && (
@@ -132,7 +140,7 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* 우측 버튼 */}
+        {/* 우측 버튼 — 추후 활성화
         <div className="hidden md:flex items-center gap-2 ml-auto shrink-0">
           <button aria-label="공유" className="p-2 text-gray-400 hover:text-white transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -147,6 +155,7 @@ export default function Header() {
             로그인하기
           </Link>
         </div>
+        */}
 
         {/* 모바일 햄버거 */}
         <button
@@ -174,13 +183,19 @@ export default function Header() {
             return (
               <div key={item.href}>
                 <div className="flex items-center">
-                  <Link
-                    href={item.href}
-                    onClick={() => { if (!item.children) setMobileOpen(false); }}
-                    className={`flex-1 px-6 py-3 text-sm ${isActive ? "text-orange-400" : "text-gray-300"}`}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.children ? (
+                    <span className={`flex-1 px-6 py-3 text-sm ${isActive ? "text-orange-400" : "text-gray-300"}`}>
+                      {item.label}
+                    </span>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`flex-1 px-6 py-3 text-sm ${isActive ? "text-orange-400" : "text-gray-300"}`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                   {item.children && (
                     <button
                       onClick={() => setMobileExpanded(isExpanded ? null : item.href)}
@@ -212,6 +227,7 @@ export default function Header() {
             );
           })}
 
+          {/* 가입하기 / 로그인하기 — 추후 활성화
           <div className="flex gap-2 px-6 py-4 border-t border-white/10">
             <Link href="/signup" className="flex-1 text-center py-2 border border-white text-white text-sm rounded">
               가입하기
@@ -220,6 +236,7 @@ export default function Header() {
               로그인하기
             </Link>
           </div>
+          */}
         </nav>
       )}
     </header>
