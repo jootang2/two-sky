@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "관별 소개",
+  description: "투스카이 수학과학 학원 상동·송도·청라 각 교육원 소개.",
+};
 
 // ─── 수정 포인트 ───────────────────────────────────────────────────────────────
 // 캠퍼스 추가 시 CAMPUSES 배열에 항목 추가

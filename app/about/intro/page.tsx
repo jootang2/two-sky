@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "인사말 / 연혁",
+  description: "투스카이 수학과학 학원 대표원장 인사말과 학원 연혁 소개.",
+};
 
 // ─── 수정 포인트 ───────────────────────────────────────────
 const CONTENT = {

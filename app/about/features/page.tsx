@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "학원 특징",
+  description: "투스카이 수학과학 학원만의 차별화된 교육 시스템과 특징 소개.",
+};
 
 // ─── 수정 포인트 ───────────────────────────────────────────────────────────────
 // href: null → 해당 페이지 완성 후 경로 입력 (예: "/middle/system")

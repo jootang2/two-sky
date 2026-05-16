@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "강사소개",
+  description: "투스카이 수학과학 학원 대표원장 및 수학·과학 전문 강사진 소개.",
+};
+
 // ─── 수정 포인트 ────────────────────────────────────────────────────────────
 const PRINCIPAL = {
   name: "이 재 식",

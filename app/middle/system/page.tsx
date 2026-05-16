@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "중등과정 시스템",
+  description: "투스카이 수학과학 학원 중등부 교육 시스템 — 1:1 관리, 클리닉, 월례평가, 수행평가 첨삭 안내.",
+};
+
 // ─── 수정 포인트 ────────────────────────────────────────────────────────────
 const BRIEFING_POINTS = [
   "학교 고유의 내신 시험 문항 유형을 중점으로 분석",

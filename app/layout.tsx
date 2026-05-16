@@ -11,8 +11,12 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "투스카이 수학과학 학원",
-  description: "투스카이 수학과학 학원 공식 홈페이지 — 개념부터 심화까지, 실력을 하늘로",
+  title: {
+    template: "%s | 투스카이 수학과학 학원",
+    default: "투스카이 수학과학 학원",
+  },
+  description: "투스카이 수학과학 학원 — 상동·송도·청라 3개 교육원. 중등·고등 수학·과학 전문, 1:1 개별 클리닉.",
+  keywords: ["수학학원", "과학학원", "상동학원", "부천학원", "투스카이", "중등수학", "고등수학", "수능수학"],
 };
 
 export default function RootLayout({
