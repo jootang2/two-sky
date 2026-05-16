@@ -18,7 +18,6 @@ const navItems: NavItem[] = [
       { label: "인사말 / 연혁", href: "/about/intro" },
       { label: "학원 특징", href: "/about/features" },
       { label: "관별 소개", href: "/about/campus" },
-      { label: "스터디카페", href: "/about/studycafe" },
       { label: "오시는 길", href: "/about/location" },
       { label: "합격 수기", href: "/about/stories" },
     ],
