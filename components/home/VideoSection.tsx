@@ -10,14 +10,14 @@ const TABS = [
     videos: [
       {
         id: "v1",
-        title: "서울대 합격생 인터뷰 — 국어 어떻게 공부했나요?",
+        title: "서울대 수학교육과 합격생 인터뷰 — 수학 어떻게 공부했나요?",
         thumb: null as string | null, // 실제 썸네일: "/images/video-thumb-1.jpg"
         youtubeId: null as string | null, // 실제 유튜브 ID: "dQw4w9WgXcQ"
         duration: "8:24",
       },
       {
         id: "v2",
-        title: "연세대 합격생이 말하는 투스카이 국어의 비밀",
+        title: "카이스트 합격생이 말하는 투스카이 수학과학의 비밀",
         thumb: null,
         youtubeId: null,
         duration: "6:51",
@@ -37,7 +37,7 @@ const TABS = [
     videos: [
       {
         id: "b1",
-        title: "투스카이 국어학원 시설 투어 — 최신 시설을 만나보세요",
+        title: "투스카이 수학과학 학원 시설 투어 — 최신 시설을 만나보세요",
         thumb: null,
         youtubeId: null,
         duration: "4:30",
@@ -64,21 +64,21 @@ const TABS = [
     videos: [
       {
         id: "l1",
-        title: "수능 국어 독서 — 과학 지문 풀이 전략 공개",
+        title: "수능 수학 — 킬러 문항 풀이 전략 완벽 공개",
         thumb: null,
         youtubeId: null,
         duration: "12:00",
       },
       {
         id: "l2",
-        title: "문학 고전시가 완벽 정리 — 이것만 알면 된다",
+        title: "물리학1 핵심 개념 완벽 정리 — 이것만 알면 된다",
         thumb: null,
         youtubeId: null,
         duration: "9:38",
       },
       {
         id: "l3",
-        title: "언어와 매체 신유형 대비 특강",
+        title: "화학 신유형 대비 특강 — 계산 문제 완전 정복",
         thumb: null,
         youtubeId: null,
         duration: "7:55",

@@ -45,9 +45,9 @@ export default function Footer() {
               </span>
             </span>
           </Link>
-          <p className="text-gray-300 text-xs">투스카이 국어학원</p>
+          <p className="text-gray-300 text-xs">투스카이 수학과학 학원</p>
           <p className="text-gray-400 text-xs mt-0.5">
-            ©Copyright 투스카이 국어학원 All rights reserved
+            ©Copyright 투스카이 수학과학 학원 All rights reserved
           </p>
         </div>
 

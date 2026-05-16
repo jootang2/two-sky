@@ -6,42 +6,42 @@ const CLASSES = [
     id: "pre-h3",
     grade: "예비고3·N수",
     period: "12/19(개강)~3/1",
-    desc: "정규반 12주, 겨울방학 무료특강, 수능 입문 강좌를 통해 탄탄한 기본기를 다져보세요.",
+    desc: "정규반 12주, 겨울방학 무료특강, 수능 수학·과학 입문 강좌를 통해 탄탄한 기본기를 다져보세요.",
     href: "/schedule#pre-h3",
   },
   {
     id: "pre-h2",
     grade: "예비고2",
     period: "12/19(개강)~3/1",
-    desc: "정규반 11주, 고난도 지문 훈련을 통해 실력을 한 단계 업그레이드하세요.",
+    desc: "정규반 11주, 고난도 수학·과학 문제 훈련을 통해 실력을 한 단계 업그레이드하세요.",
     href: "/schedule#pre-h2",
   },
   {
     id: "pre-h1",
     grade: "예비고1",
     period: "12/19(개강)~3/1",
-    desc: "선수능집중반, 선내신몰입반, 겨울방학 특강으로 고등학교 첫 시작을 완벽하게!",
+    desc: "선수능집중반, 선내신몰입반, 수학·과학 겨울방학 특강으로 고등학교 첫 시작을 완벽하게!",
     href: "/schedule#pre-h1",
   },
   {
     id: "pre-m3",
     grade: "예비중3",
     period: "12/19(개강)~2/22",
-    desc: "정규반 10주, 겨울방학 재원생 무료특강으로 중학교 마지막을 알차게!",
+    desc: "정규반 10주, 수학·과학 겨울방학 재원생 무료특강으로 중학교 마지막을 알차게!",
     href: "/schedule#pre-m3",
   },
   {
     id: "pre-m2",
     grade: "예비중2",
     period: "12/19(개강)~2/22",
-    desc: "정규반 10주, 겨울방학 재원생 무료특강으로 국어 실력의 기반을 다지세요.",
+    desc: "정규반 10주, 겨울방학 재원생 무료특강으로 수학·과학 실력의 기반을 다지세요.",
     href: "/schedule#pre-m2",
   },
   {
     id: "pre-m1",
     grade: "예비중1",
     period: "12/19(개강)~2/22",
-    desc: "정규반 10주, 겨울방학 재원생 무료특강으로 중학교 첫 발걸음을 미리 준비하세요.",
+    desc: "정규반 10주, 겨울방학 재원생 무료특강으로 중학교 수학·과학 첫 발걸음을 미리 준비하세요.",
     href: "/schedule#pre-m1",
   },
 ];
@@ -100,7 +100,7 @@ export default function ScheduleSection() {
 
         {/* 시간표 헤더 */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">투스카이 시간표</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">투스카이 수학·과학 시간표</h2>
           <p className="text-gray-500 text-sm mt-2">꿈을 향한 당신의 여정, 투스카이가 함께합니다.</p>
         </div>
 

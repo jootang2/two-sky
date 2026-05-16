@@ -2,15 +2,15 @@ import Image from "next/image";
 
 // 수정 시 여기만 변경
 const CONTENT = {
-  eyebrow: "진짜 국어공부 이제 시작",
-  title: "투스카이 국어",
-  quote: '"실력은 진심이 쌓이는 곳에서 완성된다."',
-  body: "투스카이 국어학원은 10년 이상 입시 현장을 함께해온 전문 강사진과 함께, '학생 한 명 한 명에게 맞는 공부법이 있다'는 신념 아래 단순한 지식 전달을 넘어 맞춤형 교육 시스템을 갖춘 국어 전문 학원입니다.",
+  eyebrow: "진짜 수학·과학 공부 이제 시작",
+  title: "투스카이 수학과학",
+  quote: '"개념이 단단한 학생이 결국 정상에 오른다."',
+  body: "투스카이 학원은 10년 이상 입시 현장을 함께해온 수학·과학 전문 강사진과 함께, '학생 한 명 한 명에게 맞는 공부법이 있다'는 신념 아래 단순한 문제풀이를 넘어 개념 중심 맞춤형 교육 시스템을 갖춘 수학·과학 전문 학원입니다.",
   sloganLines: [
-    { prefix: "실력은", emphasis: false },
+    { prefix: "개념은", emphasis: false },
     { prefix: "쌓이고",  emphasis: false, large: true },
-    { prefix: "국어는",  emphasis: false },
-    { prefix: "선명해진다", emphasis: true, large: true },
+    { prefix: "실력은",  emphasis: false },
+    { prefix: "하늘로 솟는다", emphasis: true, large: true },
   ],
 };
 

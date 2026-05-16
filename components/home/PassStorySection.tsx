@@ -105,7 +105,7 @@ export default function PassStorySection() {
         {/* 서브 타이틀 */}
         <p className="relative z-10 text-gray-400 text-sm md:text-base text-center leading-relaxed">
           투스카이 수강생들의<br />
-          <span className="text-gray-300">생생한 합격 스토리</span>
+          <span className="text-gray-300">생생한 수학·과학 합격 스토리</span>
         </p>
       </div>
 

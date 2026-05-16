@@ -3,10 +3,10 @@ import Link from "next/link";
 
 // 문구 수정 시 여기만 변경
 const HERO_CONTENT = {
-  eyebrow: "진짜 국어공부 이제 시작",
+  eyebrow: "진짜 수학·과학 공부 이제 시작",
   headlinePrimary: "투스카이",
-  headlineAccent: "국어",
-  sub: "실력은 쌓이고,\n국어는 성장해진다",
+  headlineAccent: "수학과학",
+  sub: "개념은 쌓이고,\n실력은 하늘로 솟는다",
   cta: "무료 진단평가 신청",
   ctaHref: "/diagnosis",
 };

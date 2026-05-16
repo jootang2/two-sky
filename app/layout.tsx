@@ -11,8 +11,8 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "투스카이 학원",
-  description: "투스카이 학원 공식 홈페이지",
+  title: "투스카이 수학과학 학원",
+  description: "투스카이 수학과학 학원 공식 홈페이지 — 개념부터 심화까지, 실력을 하늘로",
 };
 
 export default function RootLayout({
