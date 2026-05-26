@@ -3,18 +3,18 @@ import Link from "next/link";
 
 // 문구 수정 시 여기만 변경
 const HERO_CONTENT = {
-  eyebrow: "진짜 수학·과학 공부 이제 시작",
+  eyebrow: "Real Math & Science Learning Starts Here",
   headlinePrimary: "Two Sky",
-  headlineAccent: "수학과학",
-  sub: "개념은 쌓이고,\n실력은 하늘로 솟는다",
-  cta: "무료 진단평가 신청",
+  headlineAccent: "Math & Science",
+  sub: "Concepts build up,\nSkills soar to the sky",
+  cta: "Apply for Free Assessment",
   ctaHref: "/diagnosis",
 };
 
 // 이미지 교체 시 여기만 변경 (실제 이미지 경로로 대체)
 const HERO_IMAGE = {
   src: null as string | null, // 예: "/images/hero-teacher.png"
-  alt: "투스카이 선생님",
+  alt: "Two Sky Teacher",
 };
 
 function PersonPlaceholder() {
