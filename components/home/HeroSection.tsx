@@ -4,7 +4,7 @@ import Link from "next/link";
 // 문구 수정 시 여기만 변경
 const HERO_CONTENT = {
   eyebrow: "진짜 수학·과학 공부 이제 시작",
-  headlinePrimary: "Two-sky",
+  headlinePrimary: "Two Sky",
   headlineAccent: "수학과학",
   sub: "개념은 쌓이고,\n실력은 하늘로 솟는다",
   cta: "무료 진단평가 신청",
